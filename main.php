@@ -6,7 +6,7 @@
         
         pre_r($_POST);
         if(isset($_POST['submit'])){
-            $filename = "C:\Users\ozany\Documents\GitHub\php_way\depo.txt";
+            $filename = "C:\Users\ozany\Documents\GitHub\web_service\depo.txt";
             $file = fopen( $filename, "w" );
 
             if( $file == false ) {
