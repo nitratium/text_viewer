@@ -3,7 +3,7 @@
 
 * This project is planned to work on a Raspberry Pi. 
 
-* This Raspberry Pi device designed for receiving and displaying messages on its screen. Messages can be sent from any device that can connect to the website.
+* This Raspberry Pi system designed for receiving and displaying messages on its screen. Messages can be sent from any device that can connect to the website.
 
 * PHP website will be hosted by a Raspberry Pi.
 
