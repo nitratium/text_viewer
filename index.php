@@ -3,10 +3,9 @@
     <body>
 
         <?php
-        
         pre_r($_POST);
         if(isset($_POST['submit'])){
-            $filename = "C:\Users\ozany\Documents\GitHub\web_service\depo.txt";
+            $filename = "/var/www/depo.txt";
             $file = fopen( $filename, "w" );
 
             if( $file == false ) {
@@ -17,26 +16,6 @@
             fwrite( $file, $_POST['display_content']);
             fclose( $file );
         }
-        
-        ?>
-
-        <?php
-        /*
-        pre_r($_POST);
-        if(isset($_POST['submit'])){
-            $txt = $_POST['display_content'];
-
-        }
-        */
-        ?>
-
-        <?php
-        /*
-        pre_r($_POST);
-        if(isset($_POST['submit'])){
-            echo "First name: " .$_POST['display_content'].'<br />';
-        }
-        */
         ?>
 
         <form action="" method="POST">
