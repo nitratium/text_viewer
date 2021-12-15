@@ -61,11 +61,16 @@
 
 * For not experiencing any kind of problems, restart the services:
     ```
-    sudo service nginx restart
-    sudo service php7.4-fpm restart
+    $ sudo service nginx restart
+    $ sudo service php7.4-fpm restart
     ```
 
 * You should put the ```index.php``` and ```depo.txt``` in the root directory. (Which was /var/www/html for my case.)
+
+* In addition, you need to matk ```depo.txt``` as readable and writable. So the web service can write messages into this text file.
+    ```
+    $ chmode 777 depo.txt
+    ```
 
 ### Tor Implementation
 * If you don't want to use tor network to host your web service, you can skip this part.
