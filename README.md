@@ -118,7 +118,12 @@
     $ sudo apt install pip
     ```
 
-* Tkinter used for GUI. For installing it:
+* Tkinter used for GUI (for normal screens):
     ```
     $ sudo pip install tkinter
+    ```
+
+* If you are using an OLED screen: 
+    ```
+    $ sudo pip install luma.oled
     ```

@@ -14,7 +14,7 @@ label = tkinter.Label(root, textvariable=v, justify="center", fg="white", height
 label.pack()
 
 def content_switcher():
-    with open(f"{os.getcwd()}/web_service/depo.txt", mode='r', encoding='utf-8') as f:
+    with open(f"{os.getcwd()}/web_service/message.txt", mode='r', encoding='utf-8') as f:
         content_displayed = f.read()
 
         if content_displayed == "":

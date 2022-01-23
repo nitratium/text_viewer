@@ -5,7 +5,7 @@
         <?php
         pre_r($_POST);
         if(isset($_POST['submit'])){
-            $filename = "/var/www/depo.txt";
+            $filename = "/var/www/message.txt";
             $file = fopen( $filename, "w" );
 
             if( $file == false ) {
