@@ -56,7 +56,7 @@
 
 * Now in this file, you need to find the line which contains ```listen```. Edit the line as you have written in your nginx configuration file.
     ```
-    listen 127.0.0.1:7777;
+    listen = 127.0.0.1:7777;
     ```
 
 * For not experiencing any kind of problems, restart the services:
@@ -69,7 +69,7 @@
 
 * In addition, you need to matk ```depo.txt``` as readable and writable. So the web service can write messages into this text file.
     ```
-    $ chmode 777 depo.txt
+    $ chmod 777 depo.txt
     ```
 
 ### Tor Implementation
