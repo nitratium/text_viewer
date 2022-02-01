@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-import time
+import time, requests
 
 from PIL import ImageFont
 
@@ -17,11 +17,11 @@ content_displayed = "There is no message."
 font = make_font("/home/pi/Desktop/code2000.ttf", 16)
 
 while True:
-    with open(f"/var/www/html/message.txt", mode='r', encoding='utf-8') as file:
-        content_displayed = file.read()
+    requested_text = requests.get('ENTER URL HERE')
+    content_displayed = requested_text.text
 
-        if content_displayed == "":
-            content_displayed == "There is no message."
+    if content_displayed == "":
+        content_displayed == "There is no message."
 
     serial = spi(device=0, port=0)
     device = sh1106(serial)
